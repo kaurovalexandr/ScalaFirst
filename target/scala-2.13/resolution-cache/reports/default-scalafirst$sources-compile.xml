@@ -7,16 +7,136 @@
 		revision="0.1"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20191117154110"/>
+		date="20191125001803"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.13.1" status="release" pubdate="20190918115936" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.1/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="2.13.1" status="release" pubdate="20190918115936" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.1/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2691" time="0" location="C:\Users\a.kaurov\.ivy2\cache\org.scala-lang\scala-library\ivy-2.13.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.pom"/>
 				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.1" extra-info.apiURL="https://www.scala-lang.org/api/2.13.1/"/>
 				<artifacts>
 					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="990442" time="0" location="C:\Users\a.kaurov\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.13.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-parser_2.13">
+			<revision name="0.12.3" status="release" pubdate="20191022141402" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3119" time="0" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-parser_2.13\ivy-0.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-parser_2.13/0.12.3/circe-parser_2.13-0.12.3.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="0.12.3" rev-constraint-default="0.12.3" rev-constraint-dynamic="0.12.3" callerrev="0.1" extra-info.apiURL="https://circe.github.io/circe/api/"/>
+				<artifacts>
+					<artifact name="circe-parser_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="828" time="302" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-parser_2.13\srcs\circe-parser_2.13-0.12.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-parser_2.13/0.12.3/circe-parser_2.13-0.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-jawn_2.13">
+			<revision name="0.12.3" status="release" pubdate="20191022141559" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3119" time="0" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-jawn_2.13\ivy-0.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-jawn_2.13/0.12.3/circe-jawn_2.13-0.12.3.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="0.12.3" rev-constraint-default="0.12.3" rev-constraint-dynamic="0.12.3" callerrev="0.1" extra-info.apiURL="https://circe.github.io/circe/api/"/>
+				<artifacts>
+					<artifact name="circe-jawn_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3118" time="299" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-jawn_2.13\srcs\circe-jawn_2.13-0.12.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-jawn_2.13/0.12.3/circe-jawn_2.13-0.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="jawn-parser_2.13">
+			<revision name="0.14.2" status="release" pubdate="20190611180807" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/typelevel/jawn" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2918" time="0" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\jawn-parser_2.13\ivy-0.14.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/jawn-parser_2.13/0.14.2/jawn-parser_2.13-0.14.2.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="0.14.2" rev-constraint-default="0.14.2" rev-constraint-dynamic="0.14.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jawn-parser_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="20028" time="482" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\jawn-parser_2.13\srcs\jawn-parser_2.13-0.14.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/jawn-parser_2.13/0.14.2/jawn-parser_2.13-0.14.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-generic_2.13">
+			<revision name="0.12.3" status="release" pubdate="20191022141442" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3428" time="0" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-generic_2.13\ivy-0.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-generic_2.13/0.12.3/circe-generic_2.13-0.12.3.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="0.12.3" rev-constraint-default="0.12.3" rev-constraint-dynamic="0.12.3" callerrev="0.1" extra-info.apiURL="https://circe.github.io/circe/api/"/>
+				<artifacts>
+					<artifact name="circe-generic_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15178" time="322" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-generic_2.13\srcs\circe-generic_2.13-0.12.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-generic_2.13/0.12.3/circe-generic_2.13-0.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-core_2.13">
+			<revision name="0.12.3" status="release" pubdate="20191022141214" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="9">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3119" time="0" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-core_2.13\ivy-0.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-core_2.13/0.12.3/circe-core_2.13-0.12.3.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="0.12.3" rev-constraint-default="0.12.3" rev-constraint-dynamic="0.12.3" callerrev="0.1" extra-info.apiURL="https://circe.github.io/circe/api/"/>
+				<artifacts>
+					<artifact name="circe-core_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="45374" time="535" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-core_2.13\srcs\circe-core_2.13-0.12.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-core_2.13/0.12.3/circe-core_2.13-0.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-core_2.13">
+			<revision name="2.0.0" status="release" pubdate="20190910035907" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3383" time="0" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\cats-core_2.13\ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.0.0/cats-core_2.13-2.0.0.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.1" extra-info.apiURL="http://typelevel.org/cats/api/"/>
+				<artifacts>
+					<artifact name="cats-core_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="261974" time="341" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\cats-core_2.13\srcs\cats-core_2.13-2.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.0.0/cats-core_2.13-2.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-kernel_2.13">
+			<revision name="2.0.0" status="release" pubdate="20190910035720" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2939" time="0" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\cats-kernel_2.13\ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.0.0/cats-kernel_2.13-2.0.0.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.1" extra-info.apiURL="http://typelevel.org/cats/api/"/>
+				<artifacts>
+					<artifact name="cats-kernel_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="64526" time="303" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\cats-kernel_2.13\srcs\cats-kernel_2.13-2.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.0.0/cats-kernel_2.13-2.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-macros_2.13">
+			<revision name="2.0.0" status="release" pubdate="20190910035704" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\cats-macros_2.13\ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.13/2.0.0/cats-macros_2.13-2.0.0.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.1" extra-info.apiURL="http://typelevel.org/cats/api/"/>
+				<artifacts>
+					<artifact name="cats-macros_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="251" time="300" location="C:\Users\a.kaurov\.ivy2\cache\org.typelevel\cats-macros_2.13\srcs\cats-macros_2.13-2.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.13/2.0.0/cats-macros_2.13-2.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-numbers_2.13">
+			<revision name="0.12.3" status="release" pubdate="20191022141057" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2834" time="0" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-numbers_2.13\ivy-0.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-numbers_2.13/0.12.3/circe-numbers_2.13-0.12.3.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="0.12.3" rev-constraint-default="0.12.3" rev-constraint-dynamic="0.12.3" callerrev="0.1" extra-info.apiURL="https://circe.github.io/circe/api/"/>
+				<artifacts>
+					<artifact name="circe-numbers_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3939" time="504" location="C:\Users\a.kaurov\.ivy2\cache\io.circe\circe-numbers_2.13\srcs\circe-numbers_2.13-0.12.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-numbers_2.13/0.12.3/circe-numbers_2.13-0.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.13">
+			<revision name="2.3.3" status="release" pubdate="20190608111003" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3114" time="0" location="C:\Users\a.kaurov\.ivy2\cache\com.chuusai\shapeless_2.13\ivy-2.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3.pom"/>
+				<caller organisation="default" name="scalafirst$sources" conf="compile" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="shapeless_2.13" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="173417" time="361" location="C:\Users\a.kaurov\.ivy2\cache\com.chuusai\shapeless_2.13\srcs\shapeless_2.13-2.3.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
