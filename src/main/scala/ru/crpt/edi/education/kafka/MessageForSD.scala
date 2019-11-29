@@ -19,7 +19,7 @@ object MessageForSD extends StrictLogging {
     val decodeResult = parser.decode[MessageForSD](json)
     decodeResult match {
       case Right(message) => logger.info(s"from json: $message")
-      case Left(error) => logger.error(s"error : $error")
+      case Left(error) => logger.error(s"from json : $error")
     }
   }
 }
