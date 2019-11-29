@@ -6,23 +6,36 @@ import io.circe.syntax._
 
 case class MessageForSD(ownerId: String, partnerId: String, documentId: String,
                         filename: String, `type`: Int, status: Byte, comment: String) {
-  def toJson: String =
-  {
+  def toJson: String = {
     val value = this.asJson.noSpaces
     println("to json: " + value)
     value
   }
-  def toXml =
-  {
+
+  def toXml = {
     val value =
       <Запись>
-        <Отправитель>{ownerId}</Отправитель>
-        <Получатель>{partnerId}</Получатель>
-        <ИдДокумента>{documentId}</ИдДокумента>
-        <ИмяФайла>{filename}</ИмяФайла>
-        <Тип>{`type`}</Тип>
-        <Статус>{status}</Статус>
-        <Комментарий>{comment}</Комментарий>
+        <Отправитель>
+          {ownerId}
+        </Отправитель>
+        <Получатель>
+          {partnerId}
+        </Получатель>
+        <ИдДокумента>
+          {documentId}
+        </ИдДокумента>
+        <ИмяФайла>
+          {filename}
+        </ИмяФайла>
+        <Тип>
+          {`type`}
+        </Тип>
+        <Статус>
+          {status}
+        </Статус>
+        <Комментарий>
+          {comment}
+        </Комментарий>
       </Запись>
     println("to xml: " + value)
     value
@@ -38,7 +51,7 @@ object MessageForSD {
     }
   }
 
-  def fromXml(value: scala.xml.Node):MessageForSD = {
+  def fromXml(value: scala.xml.Node): MessageForSD = {
     val ownerId = (value \ "Отправитель").text
     val partnerId = (value \ "Получатель").text
     val documentId = (value \ "ИдДокумента").text
@@ -46,7 +59,7 @@ object MessageForSD {
     val `type` = (value \ "Тип").text.toInt
     val status = (value \ "Статус").text.toByte
     val comment = (value \ "Комментарий").text
-    val classFromXml = MessageForSD(ownerId,partnerId,documentId,filename,`type`,status,comment)
+    val classFromXml = MessageForSD(ownerId, partnerId, documentId, filename, `type`, status, comment)
     println("from xml: " + classFromXml.toString)
     classFromXml
   }
